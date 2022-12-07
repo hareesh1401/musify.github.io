@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="logoSection">
+                <img src="Image/logo1.png" alt="" class="logoImg">
+            <h1>Musically</h1>
+            </div>
+            <div class="searchSection">
+                <div class="searchGroup">
+                    <input type="search" id="input" class="search-input" placeholder="Search songs">
+                    <i class="fa-solid fa-magnifying-glass searchIcon"></i>
+                </div>
+                <i class="fa-solid fa-magnifying-glass cancelIcon" onclick="showSearch()"></i>
+            </div>
+        </div>
+        <div class="section">
+            <div class="left-section">
+                <!-- Music cards started -->
+                <div class="card">
+                    <div class="thumbnail">
+                        <img src="Image/thumbnail2.jpg" alt="">
+                    </div>
+                    <div class="text-details">
+                        <h2>Hymm for the Weekend</h2>
+                        <span class="artist">Cold Play</span>
+                        <button class="play flex-center" onclick="playAudio(0)" id="cardBtn1">
+                            <i class="fa-solid fa-play playIcon"></i>
+                           <span class="playText"> play</span>
+                           <audio src="songs/Coldplay - Hymn For The Weekend (Official Video)_160k.mp3" id="audio"></audio>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="thumbnail">
+                        <img src="Image/thumbnail3.jpg" alt="">
+                    </div>
+                    <div class="text-details">
+                        <h2>Ocean Eyes -</h2>
+                        <span class="artist">Billie Eilish</span>
+                        <button class="play flex-center" onclick="playAudio(1)" id="cardBtn2">
+                            <i class="fa-solid fa-play playIcon"></i>
+                           <span class="playText"> play</span>
+                            
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="thumbnail">
+                        <img src="Image/thumbnail4.jpg" alt="">
+                    </div>
+                    <div class="text-details">
+                        <h2>Sun Flower -</h2>
+                        <span class="artist">Spider Man</span>
+                        <button class="play flex-center" onclick="playAudio(2)">
+                            <i class="fa-solid fa-play playIcon"></i>
+                           <span class="playText"> play</span>
+                            
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="thumbnail">
+                        <img src="Image/thumbnail5.jpg" alt="">
+                    </div>
+                    <div class="text-details">
+                        <h2>You are not alone-</h2>
+                        <span class="artist">Michael Jackson</span>
+                        <button class="play flex-center" onclick="playAudio(3)">
+                            <i class="fa-solid fa-play playIcon"></i>
+                           <span class="playText"> play</span>
+                            
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="thumbnail">
+                        <img src="Image/thumbnail6.jpg" alt="">
+                    </div>
+                    <div class="text-details">
+                        <h2>You are not alone-</h2>
+                        <span class="artist">Michael Jackson</span>
+                        <button class="play flex-center" onclick="playAudio(4)">
+                            <i class="fa-solid fa-play playIcon"></i>
+                           <span class="playText"> play</span>
+                            
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="thumbnail">
+                        <img src="Image/thumbnail7.jpg" alt="">
+                    </div>
+                    <div class="text-details">
+                        <h2>You are not alone-</h2>
+                        <span class="artist">Michael Jackson</span>
+                        <button class="play flex-center" onclick="playAudio(5)">
+                            <i class="fa-solid fa-play playIcon"></i>
+                           <span class="playText"> play</span>
+                            
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="thumbnail">
+                        <img src="Image/thumbnail8.jpg" alt="">
+                    </div>
+                    <div class="text-details">
+                        <h2>You are not alone-</h2>
+                        <span class="artist">Michael Jackson</span>
+                        <button class="play flex-center" onclick="playAudio(6)">
+                            <i class="fa-solid fa-play playIcon"></i>
+                           <span class="playText"> play</span>
+                            
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="thumbnail">
+                        <img src="Image/thumbnail9.jpg" alt="">
+                    </div>
+                    <div class="text-details">
+                        <h2>You are not alone-</h2>
+                        <span class="artist">Michael Jackson</span>
+                        <button class="play flex-center" onclick="playAudio(7)">
+                            <i class="fa-solid fa-play playIcon"></i>
+                           <span class="playText"> play</span>
+                            
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="thumbnail">
+                        <img src="Image/thumbnail10.jpg" alt="">
+                    </div>
+                    <div class="text-details">
+                        <h2>You are not alone-</h2>
+                        <span class="artist">Michael Jackson</span>
+                        <button class="play flex-center" onclick="playAudio(8)">
+                            <i class="fa-solid fa-play playIcon"></i>
+                           <span class="playText"> play</span>
+                            
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="thumbnail">
+                        <img src="Image/thumbnail11.jpg" alt="">
+                    </div>
+                    <div class="text-details">
+                        <h2>You are not alone-</h2>
+                        <span class="artist">Michael Jackson</span>
+                        <button class="play flex-center" onclick="playAudio(9)">
+                            <i class="fa-solid fa-play playIcon"></i>
+                           <span class="playText"> play</span>
+                            
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="thumbnail">
+                        <img src="Image/thumbnail12.jpg" alt="">
+                    </div>
+                    <div class="text-details">
+                        <h2>You are not alone-</h2>
+                        <span class="artist">Michael Jackson</span>
+                        <button class="play flex-center" onclick="playAudio(10)">
+                            <i class="fa-solid fa-play playIcon"></i>
+                           <span class="playText"> play</span>
+                            
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="thumbnail">
+                        <img src="Image/thumbnail13.jpg" alt="">
+                    </div>
+                    <div class="text-details">
+                        <h2>You are not alone-</h2>
+                        <span class="artist">Michael Jackson</span>
+                        <button class="play flex-center" onclick="playAudio(11)">
+                            <i class="fa-solid fa-play playIcon"></i>
+                           <span class="playText"> play</span>
+                            
+                        </button>
+                    </div>
+                </div>
+               
+          
+                <!-- Music cards ended -->
+
+            </div>
+            <div class="right-section">
+               
+                <div class="right-wrapper flex-center">
+                   <div class="L-header">
+                    <h2 class="L-head" id="title">Hymm for the Weekend</h2>
+                    <p class="L-artist" id="artist">Cold Play</p>
+                   </div>
+                    <div class="L-thumbnail">
+                        <img src="Image/thumbnail2.jpg" id="thumbnail">
+                    </div>
+                    <div class="prograss-bar">
+                        <div class="prograss"></div>
+                    </div>
+                    <div class="timer">
+                        <span id="timeStart">0:00</span>
+                        <span id="timeEnd">0:00</span>
+                    </div>
+                    <div class="controls">      
+                        <button class="controlBtn flex-center PrevPlay">
+                            <i class="fa-solid fa-backward-step mainPlayIcon"></i>
+                        </button>
+
+
+
+
+
+
+                        <button id="playSong" class="controlBtn flex-center">
+
+                            <i class="fa-solid fa-play mainPlayIcon" id="play-icon"></i>
+                            
+                        </button>
+
+
+
+
+
+
+
+
+
+                        <button class="controlBtn flex-center NextPlay">
+                            <i class="fa-solid fa-forward-step mainPlayIcon"></i>
+                        </button>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+        <div class="footer">
+           <span>Copy right owened by respective owners</span>
+        </div>
+    </div>
+    <div class="loadPage">
+        <div class="loadWrapper">
+            <div class="loadImgWrapper">
+                <img src="Image/logo1.png" alt="" class="loadImg">
+            </div>
+            <div class="loadDetails">
+                <div class="musicDetiils">
+                    <h1>Musically</h1>
+                <p class="loadTxt">Get your favorate Music here</p>
+                </div>
+                <div class="loadBtnWrapper">
+                    <button class="startBtn" onclick="startPage()">Explore
+                        <i class="fa fa-arrow-right rightArrow" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
